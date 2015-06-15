@@ -1,0 +1,102 @@
+\section{Introduction \& Motivations}
+
+% G1: 1995: prob facts and rules
+% G2: 2000: + assumptions, _tie/_untie (_pri)
+% G3: 2001: + specials (_stem, _soundex, _eq, ...)
+% G4: 2002: + relational Bayes
+% G5: 2004: + top-k and _sort
+% G6: 2006: + Ratio Join, LM, BM25-TF
+% G7: 2009: + _poisson etc: 
+% G8: 2010: + range atoms, $0
+% G9: 2012: + functions (e.g. avg, sum)
+
+
+Ten generations:
+
+\begin{description}
+\item[G1: 1995]
+	Probabilistic facts and rules:
+	Intensional semantics: Disjointness key, event expressions.
+\inputHySpiritProgram{examples/generation-1}{pd}
+
+\item[G2: 2000]
+	Extenisonal semantics:
+	Assumptions for specifying probability aggregation.
+\inputHySpiritProgram{examples/generation-1}{pd}
+
+\item[G3: 2001]
+	Special predicates: stemming, soundex, etc
+	Plug-ins / hooks.
+\inputHySpiritProgram{examples/generation-1}{pd}
+
+\item[G4: 2002]
+	The relational Bayes, conditional atoms.
+	Expressiveness to describe conditional probabilities.
+\inputHySpiritProgram{examples/generation-1}{pd}
+
+\item[G5: 2004]
+	top-k and semi-sorted streams; window-based processing.
+\inputHySpiritProgram{examples/generation-1}{pd}
+
+\item[G6: 2006]
+	Ratio join
+\inputHySpiritProgram{examples/generation-1}{pd}
+
+\item[G7: 2009]
+	Probability distributions functions, e.g.~\_poisson(Avg,K).
+\inputHySpiritProgram{examples/generation-1}{pd}
+
+\item[G8: 2010]
+	Range atoms. Reasoning over probabilities (\$0 attribute).
+\inputHySpiritProgram{examples/generation-1}{pd}
+
+\item[G9: 2012]
+	Functions.
+\inputHySpiritProgram{examples/generation-1}{pd}
+
+\item[G10: 2014]
+	Modelling dependencies between event occurrences
+\inputHySpiritProgram{examples/generation-1}{pd}
+
+\end{description}
+
+
+\subsection{Structure \& Contributions}
+
+\section{Ten Generations}
+
+\subsection{G1 1995: Prob.~Facts and Rules}
+\input{Syntax/generation-1}
+
+Intermediates: FVPD and POOL.
+
+\subsection{G2 2000: Probabilistic Assumptions}
+\input{Syntax/generation-2}
+
+\subsection{G3 2001: Special Predicates}
+\input{Syntax/generation-3}
+
+\subsection{G4 2002: Relational Bayes}
+\input{Syntax/generation-4}
+
+\subsection{G5 2004: Top-K}
+\input{Syntax/generation-5}
+
+\subsection{G6 2006: Ratio Join}
+\input{Syntax/generation-6}
+
+\subsection{G7 2009: Distribution Predicates}
+\input{Syntax/generation-7}
+
+\subsection{G8 2010: Range Atoms}
+\input{Syntax/generation-8}
+
+\subsection{G9 2012: Functions}
+\input{Syntax/generation-9}
+
+\subsection{G10 2014: Dependencies}
+\input{Syntax/generation-10}
+
+\section{Background}
+
+\section{Summary \& Conclusions}

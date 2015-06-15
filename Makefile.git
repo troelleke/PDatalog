@@ -1,0 +1,31 @@
+help:: help_git
+help_git::
+	@echo "git commit # commit changes (locally!)"
+	@echo "git push # push changes to master"
+	@echo "git pull # pull update from master"
+
+git_init::
+	git init
+
+FILE=$(MAIN).tex
+git_add:: $(FILE)
+	git add $(FILE)
+MSG=
+git_commit::
+	git commit -m "$(MSG)"
+	#git commit
+
+git_remote_add::
+	git remote add origin $(GIT_REP)
+git_push::
+	git push -u origin master
+
+
+# create a local copy
+git_clone::
+	git clone $(GIT_REP)
+
+# update local copy
+git_pull::
+	git pull
+	#git pull origin
