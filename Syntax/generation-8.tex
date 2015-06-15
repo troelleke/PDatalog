@@ -1,0 +1,5 @@
+% Range atoms:
+\begin{tabular}{lcl}
+repTerm(T) :- p\_t(T):0.1-0.9;\\
+repTerm(T) :- p\_t(T) \& \$0 >= 0.1 \& \$0 <= 0.9;\\
+\end{tabular}

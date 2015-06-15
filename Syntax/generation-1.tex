@@ -1,0 +1,14 @@
+% G1:  1995: prob facts and rules
+% G2:  2000: + assumptions
+% G3:  2001: + specials (_stem, _soundex, _eq, ...)
+% G4:  2002: + relational Bayes
+% G5:  2004: + top-k and _sort
+% G6:  2006: + ratio join
+% G7:  2009: + _poisson etc
+% G8:  2010: + range atoms, $0
+% G9:  2012: + functions (e.g. avg, sum), expectation value
+% G10: 2014: + dependencies
+\begin{tabular}{lcl}
+prob\_fact &::=& prob proposition\\
+prob\_rule &::=& prob head ':-' body\\
+\end{tabular}

@@ -1,0 +1,5 @@
+% Specials:
+\begin{tabular}{l}
+term\_stem(Stem,D) :- term(T,D) \& \_stem(T,Stem);\\
+car\_price\_eq(CarId,Price,QPrice) :- car\_price(CarId,Price) \& \_soft\_eq(Price,QPrice);\\
+\end{tabular}

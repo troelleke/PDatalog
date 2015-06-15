@@ -1,0 +1,6 @@
+% Functions:
+\begin{tabular}{lcl}
+sum\_price DISTINCT(sum(Price)) :- car\_price(CarId, Price);\\
+avg\_price DISTINCT(avg(Price)) :- car\_price(CarId, Price);\\
+expected\_price DISTINCT(sum(\$0 * Price)) :- p\_car\_price(Price);\\
+\end{tabular}
