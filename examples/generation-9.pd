@@ -1,0 +1,5 @@
+tf_d DISTINCT(count(T),T,D) :- term(T,D);
+
+car_stats DISTINCT(Make,'count',count(*)) :- car(CarId,Make,Price);
+car_stats DISTINCT(Make,'sum_price',sum(Price)) :- car(CarId,Make,Price);
+car_stats DISTINCT(Make,'avg_price',avg(Price)) :- car(CarId,Make,Price);

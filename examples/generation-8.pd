@@ -1,0 +1,2 @@
+# A term is representative if P_D(t|c) between 0.1 and 0.9
+repTerm(T) :- p_D_t_c(T):0.1-0.9;

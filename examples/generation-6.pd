@@ -1,0 +1,7 @@
+# BM25
+tf_bm25(T,D) :- p_t_d(T,D) & BM25 avgdl();
+
+# LM
+# P(t|d) = lambda P(t|d) + (1-lambda) P(t)
+# (1-lambda) P(t) / (lambda P(t|d) + (1-lambda) P(t))
+w_lm2(T,D) :- p_t(T) & RATIO p_t_d(T,D);

@@ -1,0 +1,2 @@
+0.6 gym(X) :- female(X);
+0.5 gym(X) :- male(X);

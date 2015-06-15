@@ -1,0 +1,2 @@
+_alpha(term,0.5);
+p_t_d DISTINCT(T,D) :- term(T,D);

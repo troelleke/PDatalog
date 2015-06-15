@@ -1,0 +1,4 @@
+evidence(D,Q,T) :- match(D,Q,T):10000;
+retrieve(D,Q) :- evidence(D,Q,T);
+_sort(retrieve);
+?-retrieve(D,Q):10;

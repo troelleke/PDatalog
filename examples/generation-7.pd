@@ -1,0 +1,4 @@
+# Prob that T occurs TF times in D:
+p_k(TF,T,D) :- dl(D,Len) & p(P) & tf_d(TF,T,D) & _binomial(DL,P,TF);
+
+p_k(TF,T,D) :- avg(Avg) & tf_d(TF,T,D) & _poisson(Avg,TF);

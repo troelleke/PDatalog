@@ -1,0 +1,3 @@
+qterm_stem(Stem,Query) :- qterm(T,Query) & _stem(T,Stem);
+
+attr_index(Person,Word) :- descr(Person,Text) & _contains(Text,Word);

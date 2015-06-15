@@ -1,0 +1,3 @@
+# Conditional Atoms: Relational Bayes
+# P(t|d)
+p_t_d DISJOINT(T,D) :- term(T,D) | DISJOINT(D);
